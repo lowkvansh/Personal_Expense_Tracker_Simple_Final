@@ -48,6 +48,7 @@ Description: Lunch
 
 ## Project Structure
 
+```
 Personal_Expense_Tracker/
 │
 ├── main.py
@@ -66,6 +67,7 @@ Personal_Expense_Tracker/
 │
 └── docs/
     └── diagrams.md
+```
     
 The main application is contained in `main.py`.
 
@@ -85,9 +87,9 @@ No additional Python packages are required.
 ## How to Run
 
 Open a terminal in the project folder and run:
-
+```
 python main.py
-
+```
 The application will then display the main menu.
 
 ## Example
@@ -131,9 +133,9 @@ This keeps the project lightweight and means that no database setup is required.
 Basic tests are included in the `tests` folder.
 
 To run the tests, use:
-
+```
 python -m unittest discover -s tests -v
-
+```
 The tests check basic expense calculations such as total and average spending.
 
 ## Limitations
