@@ -1,88 +1,131 @@
 # Personal Expense Tracker
 
-Personal Expense Tracker is a simple command-line Python application for keeping track of daily expenses.
+Personal Expense Tracker is a simple command-line Python application used to record day-to-day expenses
 
-The program allows users to create an account, log in, and manage their personal expense records. Users can add, view, search, update, and delete expenses. The application also provides basic summaries such as total spending, average expense, spending by category, and spending by month.
+This program enables the user to create a new account, log in, and manage their own expense data. In addition, it allows searching, viewing, adding, updating and deleting expenses, and calculating total expenses, average expenses, and expenses by category and month
 
-The project is designed to be simple and easy to use through the terminal.
+The project is designed to be simple and easy to use through the terminal
 
 ## Features
 
-- Create a new user account
+- Creating a new user account
+
 - Login using a username and password
-- Add a new expense
-- View all saved expenses
+
+- Adding a new expense
+
+- Viewing all saved expenses
+
 - Search expenses by category or date
-- Update an existing expense
-- Delete an expense
-- Calculate total expenses
-- Calculate average expense
-- View spending by category
-- View spending by month
-- Logout from the account
-- Store information locally using text files
+
+- Updating an existing expense
+
+- Deleting an expense
+
+- Total expenses calculation
+
+- Average expense calculation
+
+- Show spending by category
+
+- Show spending by month
+
+- Store data locally using text files
+  
+- Logout 
 
 ## How the Program Works
 
-When the program starts, the user is shown a main menu. The user can choose to register a new account, log in to an existing account, or exit the program.
+The program opens a menu in the terminal where the user can choose between registering a new account, logging in, or exiting the application
 
-After logging in, the user gets access to the expense menu. From this menu, the user can add and manage expenses.
+After logging in, the user receives an expense menu and from this menu, the user can add and manage expenses.
 
-Each expense contains information such as the date, category, amount, and description. The program saves this information in text files so that the records remain available when the application is opened again.
+Every expense contains information such as the date, category, amount, and description. The program saves this information in text files so that the records remain available when the application is opened again.
 
 ## Expense Information
 
 Each expense contains:
 
 - Date
+
 - Category
-- Amount
+
+- Amount of money
+
 - Description
+
 
 For example:
 
 Date: 25-09-2026  
+
 Category: Food  
+
 Amount: 250  
+
 Description: Lunch
+
 
 ## Project Structure
 
 ```
+
 Personal_Expense_Tracker/
+
 │
+
 ├── main.py
+
 ├── README.md
+
 ├── requirements.txt
+
 ├── statement.md
+
 ├── report.md
+
 ├── report.pdf
+
 │
+
 ├── data/
+
 │   ├── users.txt
+
 │   └── expenses.txt
+
 │
+
 ├── tests/
+
 │   └── test_main.py
+
 │
+
 └── docs/
+
     └── diagrams.md
+
 ```
-    
-The main application is contained in `main.py`.
 
-The `data` folder stores user and expense information.
+The application code is mainly written in the `main.py` file
 
-The `tests` folder contains basic tests for checking some of the calculations used by the application.
+
+The data folder is where user information is stored
+
+
+The tests folder contains a few basic tests for checking if some calculations work properly or not
 
 ## Requirements
 
 The project requires:
 
+```
 - Python 3
 - A terminal or command prompt
+```
 
-No additional Python packages are required.
+No additional python packages are required 
 
 ## How to Run
 
@@ -90,74 +133,87 @@ Open a terminal in the project folder and run:
 ```
 python main.py
 ```
-The application will then display the main menu.
+The application will then display the main menu
 
 ## Example
 
 ## PERSONAL EXPENSE TRACKER
 
 1. Register
+
 2. Login
+
 3. Exit
 
 Enter your choice:
 
-After logging in, the expense menu is displayed:
+After logging in, the user receives an expense menu:
 
 ## EXPENSE MENU
 
 1. Add Expense
+
 2. View Expenses
+
 3. Search Expenses
+
 4. Update Expense
+
 5. Delete Expense
+
 6. Show Summary
+
 7. Logout
 
 Enter your choice:
 
 ## Data Storage
 
-The application uses simple text files to store information locally.
+The program stores data with the help of local text files.
 
-User information is stored in:
-
+The user data is stored in:
+```
 data/users.txt
-
-Expense information is stored in text files inside the `data` folder.
-
-This keeps the project lightweight and means that no database setup is required.
+```
+While the expense data is stored in text files which are in the data folder, it is a simple project and means that no database system is required
 
 ## Testing
 
-Basic tests are included in the `tests` folder.
+The project contains a few tests for checking if all calculations work properly
 
 To run the tests, use:
+
 ```
 python -m unittest discover -s tests -v
 ```
-The tests check basic expense calculations such as total and average spending.
+
+It will execute all the tests and show the results such as total and average spending. 
 
 ## Limitations
 
-This is a simple command-line application intended for learning and personal use.
+This is a simple command-line application created for learning and educational purposes
 
-The application does not use a database or an online account system. User data is stored locally in text files.
+It is not suitable for production because the user data is not protected, and the program does not have a database
 
-Passwords are stored as plain text, so this project should not be used as a real authentication system for sensitive information.
+Also, passwords are stored in plain text meaning that it is insecure and not suitable for real authentication system or personal information
 
 ## Future Improvements
 
 Some possible improvements for the future include:
 
-- Add a graphical user interface
-- Add charts for spending patterns
-- Add budget limits
-- Add export options
-- Use a database for storing information
-- Improve password security
-- Add more detailed financial reports
+- adding a graphical user interface
+
+- adding charts for expenses
+
+- adding budget limits
+
+- adding export options
+
+- using database for storing information
+
+- improve password security
+
+- adding more detailed financial reports
 
 ## Author
-
-A Python-based command-line application for managing everyday expenses
+Personal Expense Tracker
