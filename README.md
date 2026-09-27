@@ -49,24 +49,24 @@ Description: Lunch
 ## Project Structure
 
 Personal_Expense_Tracker/
-
-├── main.py  
-├── README.md  
-├── requirements.txt  
-├── statement.md  
-├── report.md  
-├── report.pdf  
-│  
-├── data/  
-│   ├── users.txt  
-│   └── expenses.txt  
-│  
-├── tests/  
-│   └── test_main.py  
-│  
-└── docs/  
+│
+├── main.py
+├── README.md
+├── requirements.txt
+├── statement.md
+├── report.md
+├── report.pdf
+│
+├── data/
+│   ├── users.txt
+│   └── expenses.txt
+│
+├── tests/
+│   └── test_main.py
+│
+└── docs/
     └── diagrams.md
-
+    
 The main application is contained in `main.py`.
 
 The `data` folder stores user and expense information.
@@ -92,9 +92,7 @@ The application will then display the main menu.
 
 ## Example
 
-========================================
-       PERSONAL EXPENSE TRACKER
-========================================
+## PERSONAL EXPENSE TRACKER
 
 1. Register
 2. Login
@@ -104,9 +102,7 @@ Enter your choice:
 
 After logging in, the expense menu is displayed:
 
-========================================
-          EXPENSE MENU
-========================================
+## EXPENSE MENU
 
 1. Add Expense
 2. View Expenses
@@ -162,4 +158,4 @@ Some possible improvements for the future include:
 
 ## Author
 
-Personal Expense Tracker
+A Python-based command-line application for managing everyday expenses
